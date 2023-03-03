@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%220.9em%22 font-size=%22105%22>🕸</text></svg>">
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" defer class="remove"></script>
+  <title>Considerations on W3C Governance</title>
+  <script class="remove">
+    var respecConfig = {
+      specStatus: 'base',
+      editors: [{
+        name: 'Robin Berjon',
+        company: 'Protocol Labs',
+        companyURL: 'https://protocol.ai/',
+        url: 'https://berjon.com/',
+        w3cid: 34327,
+      }],
+      shortName: 'w3c-governance-considerations',
+      github: {
+        repoURL: 'https://github.com/darobin/w3c-governance-considerations',
+        branch: 'main',
+      },
+      edDraftURI: 'https://darobin.github.io/w3c-governance-considerations/',
+      postProcess: [
+        () => {
+          for (let dt of document.querySelectorAll('.head details dt')) {
+            if (/Latest\s+published\s+version:/i.test(dt.textContent)) {
+              dt.nextElementSibling.remove();
+              dt.remove();
+            }
+          }
+          document.querySelector('#sotd > p').remove();
+        }
+      ],
+    };
+  </script>
+ </head>
+ <body>
+  <section id="abstract">
+    The W3C is in the process of rethinking its governance and the governance of the Web as a whole. In preparation for
+    "Governance Week" (the informal name for a meeting of the AC, AB, TAG, and Board in May 2023), this document captures
+    some thoughts about topics we need to find consensus on.
+  </section>
+  <section id="sotd">
+    <p>
+      This document is just a proposal from its author. Describing it as anything more established than just one person's
+      idea is deceptive.
+    </p>
+  </section>
+  <!--
+    - stewardship
+    - not member org
+    - legitimacy of elected bodies
+    - reforming HR
+    - building from the ground up
+    - how do we establish ourselves as credible in a transnational context
+   -->
+
+</body>
+</html>
